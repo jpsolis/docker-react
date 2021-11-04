@@ -2,8 +2,8 @@ sudo: required
 services: 
   - docker
 
-  before_install:
-    - docker build -t jpsolis/docker-react -f Dockerfile.dev .
+before_install:
+  - docker build -t jpsolis/docker-react -f Dockerfile.dev .
 
-  script:
-    - docker run -e CI=true jpsolis/docker-react npm run test -- --coverage    
+ script:
+  - docker run -e CI=true jpsolis/docker-react npm run test -- --coverage    

@@ -6,4 +6,4 @@ services:
     - docker build -t jpsolis/docker-react -f Dockerfile.dev .
 
   script:
-    - docker run jpsolis/docker-react npm run test -- --coverage    
+    - docker run -e CI=true jpsolis/docker-react npm run test -- --coverage    

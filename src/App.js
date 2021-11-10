@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-         Cambio texto
+         Pruebas para Elastic Beanstalk
         </p>
         <a
           className="App-link"
